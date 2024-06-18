@@ -1,0 +1,11 @@
+Redis setup in Docker
+
+-> First setup Docker and start the daemon.
+-> In Redis documentation you can find the command "docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+" which will create an image of Redis in docker and expose it to port 6379 and for GUI it is exposed to 8001.
+-> Next running Docker ps will give a string.
+-> Copy the string and paste it with "docker exec -it <string> bash", this connects the mac with Redis client.
+-> Run "redis-cli" to open redis cli client. TADA its done..
+-> To access the GUI you can open localhost:8001 as port was mentioned in one of the above commands.
+
+
