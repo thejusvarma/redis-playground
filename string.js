@@ -28,7 +28,6 @@ app.get('/', async (req, res) => {
             cacheValue: response.data,
             enabledRedis: enabledRedis
         });
-        return res.send(response.data); // Return the actual data from the response
     } catch (error) {
         console.error('Error fetching data from API:', error);
         return res.status(500).json({ error: 'Failed to fetch data' });
